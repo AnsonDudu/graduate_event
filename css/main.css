@@ -12,98 +12,314 @@
 #navBar { display:none;}
 
 
-.page1{
-	/*background-image: url("../images/page1_Bg.jpg");
-	background-repeat: no-repeat;
-	-webkit-background-size: cover;
-	background-size: cover;*/
+@media screen and (max-width: 350px) {
+
+	.background{
+		width: 300%;
+		height: 200%;
+		position: absolute;
+		background-image: url("../images/page1_Bg.jpg");
+		-webkit-background-size: 120%;
+		background-size: 120%;
+		background-repeat: no-repeat;
+		background-position: top;
+		background-attachment: fixed;
+		left: 0rem;
+		top: -0rem;
+		z-index: -1;
+	}
+
+	#talk{
+		position: relative;
+		width: 0px;
+		height: 0px;
+		background-color: #ccc;
+		left: 50px;
+		top: 175px;
+	}
+
+	.target_1{
+		position: absolute;
+		width: 100px;
+		height: 225px;
+		left: 0px;
+		top: -10px;
+		background-image: url("../images/target_1.png");
+		-webkit-background-size: 60%;
+		background-size: 60%;
+		background-repeat: no-repeat;
+		z-index: 2;
+	}
+
+	.target_2{
+		position: absolute;
+		width: 100px;
+		height: 225px;
+		left: 0px;
+		top: -10px;
+		background-image: url("../images/target_2.png");
+		-webkit-background-size: 55%;
+		background-size: 55%;
+		background-repeat: no-repeat;
+		z-index: 2;
+	}
+
+	.dialogue{
+		background-image: url("../images/dialogue.png");
+		background-repeat: no-repeat;
+		-webkit-background-size: 80%;
+		background-size: 80%;
+		position: absolute;
+		width: 300px;
+		height: 350px;
+		left: -75px;
+		top: 75px;
+	}
+
+	.dialogue p{
+		position: relative;
+		left: -5%;
+		top: 27.5%;
+		font-size: 24px;
+		font-weight: bolder;
+		color: #bb274a;
+		text-align: center;
+	}
+
+	.student{
+		position: absolute;
+		width: 300px;
+		height: 450px;
+		left: 200px;
+		bottom: -250px;
+		background-image: url("../images/student.png");
+		-webkit-background-size: 35%;
+		background-size: 35%;
+		background-repeat: no-repeat;
+		z-index: 2;
+	}
+
+	.student_angry{
+		position: absolute;
+		width: 300px;
+		height: 450px;
+		left: 175px;
+		bottom: -225px;
+		background-image: url("../images/student_angry.png");
+		border-radius: 25%;
+		-webkit-background-size: 35%;
+		background-size: 35%;
+		background-repeat: no-repeat;
+		z-index: 2;
+	}
 }
 
-.background{
-	width: 300%;
-	position: absolute;
-	left: -5%;
-	top: -15%;
-	z-index: -1;
+@media screen and (max-width: 400px) and (min-width: 351px) {
+
+	.background{
+		width: 300%;
+		height: 200%;
+		position: absolute;
+		background-image: url("../images/page1_Bg.jpg");
+		-webkit-background-size: 120%;
+		background-size: 120%;
+		background-repeat: no-repeat;
+		background-position: top;
+		background-attachment: fixed;
+		left: 0rem;
+		top: -0rem;
+		z-index: -1;
+	}
+
+	#talk{
+		position: relative;
+		width: 0px;
+		height: 0px;
+		background-color: #ccc;
+		left: 50px;
+		top: 175px;
+	}
+
+	.target_1{
+		position: absolute;
+		width: 100px;
+		height: 225px;
+		left: 0px;
+		top: 15px;
+		background-image: url("../images/target_1.png");
+		-webkit-background-size: 60%;
+		background-size: 60%;
+		background-repeat: no-repeat;
+		z-index: 2;
+	}
+
+	.target_2{
+		position: absolute;
+		width: 100px;
+		height: 225px;
+		left: 0px;
+		top: -0px;
+		background-image: url("../images/target_2.png");
+		border-radius: 25%;
+		-webkit-background-size: 75%;
+		background-size: 75%;
+		background-repeat: no-repeat;
+		z-index: 2;
+	}
+
+	.dialogue{
+		background-image: url("../images/dialogue.png");
+		background-repeat: no-repeat;
+		-webkit-background-size: 80%;
+		background-size: 80%;
+		position: absolute;
+		width: 300px;
+		height: 350px;
+		left: -25px;
+		top: 85px;
+	}
+
+	.dialogue p{
+		position: relative;
+		left: -5%;
+		top: 27.5%;
+		font-size: 24px;
+		font-weight: bolder;
+		color: #bb274a;
+		text-align: center;
+	}
+
+	.student{
+		position: absolute;
+		width: 300px;
+		height: 450px;
+		left: 250px;
+		bottom: -250px;
+		background-image: url("../images/student.png");
+		border-radius: 25%;
+		-webkit-background-size: 35%;
+		background-size: 35%;
+		background-repeat: no-repeat;
+		z-index: 2;
+	}
+
+	.student_angry{
+		position: absolute;
+		width: 300px;
+		height: 450px;
+		left: 175px;
+		bottom: -225px;
+		background-image: url("../images/student_angry.png");
+		border-radius: 25%;
+		-webkit-background-size: 35%;
+		background-size: 35%;
+		background-repeat: no-repeat;
+		z-index: 2;
+	}
 }
 
-.target_1{
-	position: absolute;
-	width: 100px;
-	height: 225px;
-	left: 145px;
-	top: 120px;
-	background-image: url("../images/target_1.png");
-	border-radius: 25%;
-	-webkit-background-size: 80%;
-	background-size: 80%;
-	background-repeat: no-repeat;
-	z-index: 2;
-}
+@media screen and (min-width: 401px) {
 
-.target_2{
-	position: absolute;
-	width: 100px;
-	height: 225px;
-	left: 145px;
-	top: 120px;
-	background-image: url("../images/target_2.png");
-	border-radius: 25%;
-	-webkit-background-size: 80%;
-	background-size: 80%;
-	background-repeat: no-repeat;
-	z-index: 2;
-}
+	.background{
+		width: 300%;
+		height: 200%;
+		position: absolute;
+		background-image: url("../images/page1_Bg.jpg");
+		-webkit-background-size: 120%;
+		background-size: 120%;
+		background-repeat: no-repeat;
+		background-position: top;
+		background-attachment: fixed;
+		left: 0rem;
+		top: -0rem;
+		z-index: -1;
+	}
 
-.dialogue{
-	background-image: url("../images/dialogue.png");
-	background-repeat: no-repeat;
-	position: absolute;
-	width: 300px;
-	height: 350px;
-	left: 50px;
-	top: 200px;
-}
+	#talk{
+		position: relative;
+		width: 0px;
+		height: 0px;
+		background-color: #ccc;
+		left: 75px;
+		top: 225px;
+	}
 
-.dialogue p{
-	position: relative;
-	left: 30%;
-	top: 35%;
-	font-size: 30px;
-	font-weight: bolder;
-	color: #bb274a;
-}
+	.target_1{
+		position: absolute;
+		width: 100px;
+		height: 225px;
+		left: 0px;
+		top: -10px;
+		background-image: url("../images/target_1.png");
+		-webkit-background-size: 60%;
+		background-size: 60%;
+		background-repeat: no-repeat;
+		z-index: 2;
+	}
 
-.hide{
-	display: none;
-}
+	.target_2{
+		position: absolute;
+		width: 100px;
+		height: 225px;
+		left: -10px;
+		top: -0px;
+		background-image: url("../images/target_2.png");
+		border-radius: 25%;
+		-webkit-background-size: 60%;
+		background-size: 60%;
+		background-repeat: no-repeat;
+		z-index: 2;
+	}
 
-.student{
-	position: absolute;
-	width: 300px;
-	height: 450px;
-	left: 300px;
-	bottom: -200px;
-	background-image: url("../images/student.png");
-	border-radius: 25%;
-	-webkit-background-size: 35%;
-	background-size: 35%;
-	background-repeat: no-repeat;
-	z-index: 2;
-}
+	.dialogue{
+		background-image: url("../images/dialogue.png");
+		background-repeat: no-repeat;
+		-webkit-background-size: 80%;
+		background-size: 80%;
+		position: absolute;
+		width: 300px;
+		height: 350px;
+		left: -75px;
+		top: 75px;
+	}
 
-.student_angry{
-	position: absolute;
-	width: 300px;
-	height: 450px;
-	left: 250px;
-	bottom: -200px;
-	background-image: url("../images/student_angry.png");
-	border-radius: 25%;
-	-webkit-background-size: 35%;
-	background-size: 35%;
-	background-repeat: no-repeat;
-	z-index: 2;
+	.dialogue p{
+		position: relative;
+		left: -5%;
+		top: 27.5%;
+		font-size: 24px;
+		font-weight: bolder;
+		color: #bb274a;
+		text-align: center;
+	}
+
+	.student{
+		position: absolute;
+		width: 300px;
+		height: 450px;
+		left: 250px;
+		bottom: -250px;
+		background-image: url("../images/student.png");
+		border-radius: 25%;
+		-webkit-background-size: 35%;
+		background-size: 35%;
+		background-repeat: no-repeat;
+		z-index: 2;
+	}
+
+	.student_angry{
+		position: absolute;
+		width: 300px;
+		height: 450px;
+		left: 200px;
+		bottom: -225px;
+		background-image: url("../images/student_angry.png");
+		border-radius: 25%;
+		-webkit-background-size: 35%;
+		background-size: 35%;
+		background-repeat: no-repeat;
+		z-index: 2;
+	}
 }
 
 .bottle{
@@ -126,6 +342,34 @@
 	z-index: 3;
 }
 
+.dialogue2{
+	background-image: url("../images/dialogue2.png");
+	background-repeat: no-repeat;
+	-webkit-background-size: 80%;
+	background-size: 80%;
+	position: absolute;
+	width: 200px;
+	height: 200px;
+	bottom: 400px;
+	left: 10px;
+}
+
+.dialogue2 p{
+		position: relative;
+		left: -7.5%;
+		top: 2.5%;
+		font-size: 20px;
+		font-weight: bolder;
+		color: #bb274a;
+		text-align: center;
+	}
+
+
+
+.hide{
+	display: none;
+}
+
 @keyframes rotatingbg{
 	from {transform: rotate(0deg);}
 	to {transform: rotate(360deg);}
@@ -142,4 +386,3 @@
 	animation: rotatingbg 30s infinite;
 	-webkit-animation: rotatingbg 30s infinite;}
 }
-

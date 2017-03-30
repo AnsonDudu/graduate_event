@@ -14,16 +14,14 @@ runPage = new FullPage({
         },
     mode : 'wheel,touch,nav:navBar',               // mode of fullpage
     easing : 'ease' ,                              // easing('ease','ease-in','ease-in-out' or use cubic-bezier like [.33, 1.81, 1, 1];
-    callback : function(){
-
-
-             $(".dialogue").removeClass("hide");
-             if(!$(".page4")){
-                 $(".dialogue").addClass("animated tada");
-               }
-             window.setTimeout(function(){
-                $(".dialogue").addClass("hide")
-             },3000)
+    callback :
+    function(){
+        var freashBack =window.setInterval(function(){
+                $(".dialogue").addClass("hide");
+            },2000);
+        $(".dialogue").removeClass("hide");
+        $(".dialogue2").removeClass("hide");
+        freashBack;
     }
 });
 });;
